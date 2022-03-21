@@ -34,10 +34,10 @@ textarea:focus {
   outline: none;
   border: none;
 }
-.list {
+ul {
   list-style: none;
 }
-.link {
+a {
   text-decoration: none;
 }
 body {

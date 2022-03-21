@@ -4,16 +4,6 @@ export const SeectionPreHeader = styled.section`
   align-items: center;
   padding-top: 21px;
 `;
-export const PreHeaderTime = styled.img`
-  margin-left: 22px;
-  width: 37px;
-  height: 17px;
-`;
-export const PreHeaderIndicators = styled.svg`
-  display: block;
-  right: 0;
-  margin-left: auto;
-`;
 export const PreHeaderContainer = styled.div`
   height: 100%;
   padding: 0px 8px;
@@ -31,4 +21,15 @@ export const PreHeaderContainer = styled.div`
     padding: 112px;
     max-width: 1440px;
   }
+`;
+
+export const PreHeaderTime = styled.img`
+  margin-left: 22px;
+  width: 37px;
+  height: 17px;
+`;
+export const PreHeaderIndicators = styled.svg`
+  display: block;
+  right: 0;
+  margin-left: auto;
 `;
