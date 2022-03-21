@@ -1,17 +1,12 @@
-export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        textTransform: 'uppercase',
-        color: '#010101',
-      }}
-    >
-      React homework template
-    </div>
-  );
-};
+ import Header from './Header/Header.jsx'
+ import PreHeader from './PreHeader/PreHeader'
+  export const App = () => {
+   
+
+return(
+    <><PreHeader></PreHeader>
+       <Header></Header>
+    </>
+)
+}
+
