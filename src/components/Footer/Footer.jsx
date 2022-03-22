@@ -1,6 +1,5 @@
 import {
   FooteDescription,
-  FooteDescriptionContacts,
   FooteDescriptionPolitic,
   FooteDescriptionPoliticLink,
   FooteNavigation,
@@ -17,6 +16,7 @@ import {
   FooterLogoSvg,
   FooterTag,
 } from './FooterStyledComponents';
+import PropTypes from 'prop-types'; // ES6
 const Footer = ({ matches }) => {
   return (
     <FooterTag>
@@ -172,3 +172,6 @@ const Footer = ({ matches }) => {
 };
 
 export default Footer;
+Footer.propTypes = {
+  matches: PropTypes.bool,
+};

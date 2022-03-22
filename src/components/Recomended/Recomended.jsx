@@ -4,6 +4,7 @@ import {
   RecomendedTitle,
   RecomendedList,
 } from './RecomendedStyledComponents';
+import PropTypes from 'prop-types'; // ES6
 import RecomendedMarkupDesktope from './RecomendedMarkupDesktope';
 import RecomendedMarkupMobile from './RecomendedMarkupMobile';
 const Recomended = ({ matches }) => {
@@ -21,3 +22,6 @@ const Recomended = ({ matches }) => {
 };
 
 export default Recomended;
+Recomended.propTypes = {
+  matches: PropTypes.bool,
+};
