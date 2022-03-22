@@ -10,7 +10,6 @@ export const HeaderStyled = styled.header`
 `;
 export const HeaderContainer = styled.div`
   height: 100%;
-  padding: 0px 8px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -48,9 +47,12 @@ export const HeaderForm = styled.form`
   margin-left: 16px;
   display: flex;
   align-items: center;
+  width: 100%;
+  @media screen and (min-width: 1439px) {
+    display: none;
+  }
 `;
 export const HeaderFormInput = styled.input`
-  max-width: 215px;
   height: 40px;
   border: 1px solid #e6ecf5;
   box-sizing: border-box;
@@ -76,19 +78,150 @@ export const HeaderFormButton = styled.button`
   border-radius: 0px 4px 4px 0px;
 `;
 export const HeaderFormButtonSvg = styled.svg``;
+export const HeaderIcons = styled.div`
+  margin-left: 16px;
+  margin-right: 16px;
+  @media screen and (min-width: 1439px) {
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+`;
 export const HeaderBell = styled.button`
-  margin-left: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   :hover > svg > path {
     fill: #0072db;
   }
+  @media screen and (min-width: 1439px) {
+    margin-left: 20px;
+  }
+`;
+export const HeaderBellSvg = styled.svg``;
+
+export const HeaderPlus = styled.button`
+  display: none;
+  @media screen and (min-width: 1439px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    :hover > svg > path {
+      fill: #0072db;
+    }
+  }
+`;
+export const HeaderPlusSvg = styled.svg``;
+
+export const HeaderFavorite = styled.button`
+  display: none;
+  @media screen and (min-width: 1439px) {
+    margin-left: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    :hover > svg > path {
+      fill: #0072db;
+    }
+  }
 `;
 
-export const HeaderBellSvg = styled.svg``;
-export const HeaderAccount = styled.img`
+export const HeaderFavoriteSvg = styled.svg``;
+export const HeaderAccount = styled.div`
+  display: flex;
+  align-items: center;
+`;
+export const HeaderAccountImg = styled.img`
   max-width: 32px;
   max-height: 32px;
-  margin-left: 21px;
+  @media screen and (min-width: 1439px) {
+    max-width: 48px;
+    max-height: 48px;
+  }
+`;
+export const HeaderAccountText = styled.div`
+  display: none;
+  @media screen and (min-width: 1439px) {
+    display: block;
+    margin-left: 12px;
+  }
+`;
+export const HeaderAccountTextName = styled.p`
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.2;
+
+  color: #222222;
+`;
+export const HeaderAccountTextRole = styled.p`
+  margin-top: 3px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.2;
+
+  color: #575757;
+`;
+export const Navigation = styled.nav`
+  @media screen and (min-width: 1439px) {
+    display: flex;
+  }
+`;
+export const NavigationList = styled.ul`
+  display: none;
+  @media screen and (min-width: 1439px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 32px;
+  }
+`;
+export const NavigationItem = styled.li`
+  display: none;
+  @media screen and (min-width: 1439px) {
+    display: flex;
+    :not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+`;
+export const NavigationItemLink = styled.a`
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.2;
+  /* identical to box height */
+
+  /* main */
+
+  color: #222222;
+`;
+export const HeaderLogoLink = styled.a`
+  display: none;
+  @media screen and (min-width: 1439px) {
+    position: relative;
+
+    display: flex;
+  }
+`;
+export const HeaderLogoImg = styled.svg`
+  display: none;
+  @media screen and (min-width: 1439px) {
+    display: block;
+  }
+`;
+export const HeaderLogoText = styled.p`
+  display: none;
+  @media screen and (min-width: 1439px) {
+    position: absolute;
+    left: 18px;
+    top: 7px;
+    display: block;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #222222;
+  }
 `;

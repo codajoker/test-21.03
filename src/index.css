@@ -39,12 +39,18 @@ ul {
 }
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 body {
   margin-left: 0;
   margin-right: 0;
   font-family: 'Rubik', sans-serif;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1439px) {
+  body {
+    margin-bottom: 0;
+  }
 }
 body.modal-open {
   overflow: hidden;
@@ -86,6 +92,7 @@ img {
   margin: -1px;
 }
 button {
+  cursor: pointer;
   padding: 0;
   background-color: inherit;
 }

@@ -5,10 +5,16 @@ export const FooterTag = styled.footer`
   left: 0px;
   right: 0px;
   background-color: white;
+  @media screen and (min-width: 1439px) {
+    position: static;
+    background: #f4f4f4;
+    padding-top: 24px;
+    padding-bottom: 19px;
+  }
 `;
 export const FooterContainer = styled.div`
   height: 100%;
-  background-color: white;
+  background: #f4f4f4;
 
   padding: 0px 8px;
   margin-left: auto;
@@ -19,6 +25,9 @@ export const FooterContainer = styled.div`
     max-width: 375px;
   }
   @media screen and (min-width: 1439px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 0px 112px;
     max-width: 1440px;
   }
@@ -63,4 +72,42 @@ export const FooterListItemTextActive = styled.p`
   /* second */
 
   color: #0072db;
+`;
+export const FooterLogoLink = styled.a``;
+export const FooterLogoSvg = styled.svg``;
+export const FooteDescription = styled.div``;
+
+export const FooteNavigation = styled.nav`
+  padding-bottom: 20px;
+  display: flex;
+  border-bottom: 1px solid #e6ecf5;
+`;
+export const FooteNavigationLink = styled.a`
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.2;
+
+  color: #222222;
+  margin-right: 32px;
+`;
+export const FooteNavigationStronLink = styled.a`
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+
+  color: #222222;
+`;
+export const FooteDescriptionPolitic = styled.p`
+  padding-top: 15px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+
+  /* main */
+
+  color: #222222;
+`;
+export const FooteDescriptionPoliticLink = styled.a`
+  text-decoration: underline;
 `;

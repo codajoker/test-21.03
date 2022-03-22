@@ -29,11 +29,17 @@ export const OfferListItemWrapper = styled.div`
   border-radius: 4px;
 `;
 
-export const OfferListItemButton = styled.button`
+export const OfferListItemButton = styled.a`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media screen and (min-width: 1439px) {
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: flex-start;
+  }
 `;
 export const OfferListItemImage = styled.svg``;
 export const OfferListItemText = styled.p`
@@ -43,4 +49,9 @@ export const OfferListItemText = styled.p`
   line-height: 1.2;
 
   color: #222222;
+  @media screen and (min-width: 1439px) {
+    margin-top: 0;
+    margin-left: 16px;
+    font-size: 16px;
+  }
 `;

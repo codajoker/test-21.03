@@ -18,8 +18,17 @@ const OfferList = () => {
     dots: false,
     infinite: false,
     centerPadding: '60px',
-    slidesToShow: 3.43,
-    swipeToSlide: true,
+    slidesToShow: 5,
+
+    responsive: [
+      {
+        breakpoint: 1439,
+        settings: {
+          slidesToShow: 3.43,
+          swipeToSlide: true,
+        },
+      },
+    ],
   };
   return (
     <>
@@ -29,7 +38,7 @@ const OfferList = () => {
             <OfferListItem>
               {' '}
               <OfferListItemWrapper>
-                <OfferListItemButton>
+                <OfferListItemButton href="#">
                   <OfferListItemImage
                     version="1.1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +66,7 @@ const OfferList = () => {
             <OfferListItem>
               <OfferListItemWrapper>
                 {' '}
-                <OfferListItemButton>
+                <OfferListItemButton href="#">
                   <OfferListItemImage
                     version="1.1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +86,7 @@ const OfferList = () => {
             <OfferListItem>
               <OfferListItemWrapper>
                 {' '}
-                <OfferListItemButton>
+                <OfferListItemButton href="#">
                   <OfferListItemImage
                     version="1.1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +105,7 @@ const OfferList = () => {
             <OfferListItem>
               <OfferListItemWrapper>
                 {' '}
-                <OfferListItemButton>
+                <OfferListItemButton href="#">
                   <OfferListItemImage
                     version="1.1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +123,7 @@ const OfferList = () => {
             <OfferListItem>
               <OfferListItemWrapper>
                 {' '}
-                <OfferListItemButton>
+                <OfferListItemButton href="#">
                   <OfferListItemImage
                     version="1.1"
                     xmlns="http://www.w3.org/2000/svg"
