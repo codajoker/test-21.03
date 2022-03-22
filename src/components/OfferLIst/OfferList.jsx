@@ -12,7 +12,11 @@ import {
 // Import css files
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { useEffect } from 'react/cjs/react.production.min';
 const OfferList = () => {
+  useEffect(() => {
+    console.log(1);
+  }, []);
   const settings = {
     dots: false,
     infinite: false,
