@@ -21,9 +21,9 @@ const Header = () => {
             <path
               d="M4.125 6.375H19.875M4.125 18.375H19.875H4.125ZM4.125 12.375H19.875H4.125Z"
               stroke="#222222"
-              stroke-width="2.25"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2.25"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </BurgerSvg>
         </Burger>

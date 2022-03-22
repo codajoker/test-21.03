@@ -22,7 +22,7 @@ export const HeaderContainer = styled.div`
     max-width: 375px;
   }
   @media screen and (min-width: 1439px) {
-    padding: 112px;
+    padding: 0px 112px;
     max-width: 1440px;
   }
 `;
@@ -30,13 +30,13 @@ export const Burger = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
+  margin-right: auto;
   background-color: white;
   &:hover > svg > path {
     stroke: #0072db;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1439px) {
     display: none;
   }
 `;
@@ -50,7 +50,7 @@ export const HeaderForm = styled.form`
   align-items: center;
 `;
 export const HeaderFormInput = styled.input`
-  width: 215px;
+  max-width: 215px;
   height: 40px;
   border: 1px solid #e6ecf5;
   box-sizing: border-box;
@@ -88,5 +88,7 @@ export const HeaderBell = styled.button`
 
 export const HeaderBellSvg = styled.svg``;
 export const HeaderAccount = styled.img`
+  max-width: 32px;
+  max-height: 32px;
   margin-left: 21px;
 `;

@@ -18,7 +18,7 @@ export const PreHeaderContainer = styled.div`
     max-width: 375px;
   }
   @media screen and (min-width: 1439px) {
-    padding: 112px;
+    padding: 0px 112px;
     max-width: 1440px;
   }
 `;

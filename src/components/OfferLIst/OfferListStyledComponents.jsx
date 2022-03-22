@@ -11,22 +11,24 @@ export const OfferListContainer = styled.div`
   width: 100%;
 
   @media screen and (min-width: 374px) {
-    padding: 0px 16px;
+    padding: 0px 2px;
     max-width: 375px;
   }
   @media screen and (min-width: 1439px) {
-    padding: 112px;
+    padding: 0px 112px;
     max-width: 1440px;
   }
 `;
 export const OfferListItem = styled.div`
   padding-left: 12px;
 `;
+
 export const OfferListItemWrapper = styled.div`
   padding: 10px 20px 8px 20px;
   border: 1px solid #ececec;
   border-radius: 4px;
 `;
+
 export const OfferListItemButton = styled.button`
   display: flex;
   flex-direction: column;
