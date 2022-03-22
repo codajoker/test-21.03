@@ -44,6 +44,7 @@ body {
   margin-left: 0;
   margin-right: 0;
   font-family: 'Rubik', sans-serif;
+  margin-bottom: 50px;
 }
 body.modal-open {
   overflow: hidden;
